@@ -1,0 +1,91 @@
+.top{
+    /* height: 80vw; */
+    padding: 8px;
+}
+.tagline{
+    text-align: center;
+    font-size: 48px;
+    padding: 8px;
+}
+.info{
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+.actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    margin: 8px;
+}
+.register-home{
+    outline: none;
+    border: none;
+    padding: 16px 32px;
+    background-color: var(--secondary);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 200px;
+    transition: 0.3s;
+}
+.register-home:hover{
+    opacity: 0.95;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+.login{
+    padding: 4px;
+    font-size: 16px;
+}
+.login a{
+    color: blue;
+    padding-left: 4px;
+}
+.login a:hover, .login a:focus{
+    text-decoration: underline;
+}
+.view-post{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    align-items: center;
+}
+.latest, .all, .divide{
+    padding: 4px 8px;
+    text-align: center;
+}
+.latest{
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 4px;
+    width: 80px;
+    cursor: pointer;
+}
+.all{
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    padding: 2px;
+    color: var(--secondary);
+    width: 75px;
+    transition: .3s;
+}
+.all:hover{
+    background-color: var(--secondary);
+    color: white;
+}
+@media screen and (max-width: 600px){
+    .top{
+        padding: 4px;
+    }
+    .tagline{
+        font-size: 30px;
+        /* text-align: justify; */
+        padding: 4px;
+    }
+    .info{
+        /* text-align: left; */
+        font-size: 18px;
+    }
+}

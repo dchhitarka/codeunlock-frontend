@@ -1,0 +1,52 @@
+/* Footer */
+.footer{
+    background-color: var(--container-color);
+    min-height: 40vh;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+}
+
+/* BACK TO TOP BUTTON */
+/* #myB */
+/*  */
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+    .footer-cols{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        min-width: 300px;
+        margin: 7px;
+    }
+        .footer-cols h4{
+            padding: 5px 0;
+        }
+        .footer-cols a{
+            padding: 5px;
+        }
+        .social_link{
+            overflow-y: hidden;
+            margin: 7px;
+        }
+        .social_link .footer-links{
+            font-size: 20px;
+        }
+        .footer-links i:hover{
+            color: red;
+        }
+
+.footer_bottom{
+    margin-top: 7px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .footer_bottom{
+        margin-bottom: 40px;
+    }
+} 

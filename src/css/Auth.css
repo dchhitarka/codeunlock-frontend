@@ -1,0 +1,121 @@
+.login, .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form, .register-form{
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    margin: 8px 4px;
+    display: flex;
+    flex-direction: column;
+}
+.form-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    font-size: 24px;
+}
+.form-heading{
+    position: relative;
+    padding-bottom: 8px;
+}
+.form-heading::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #131313;
+}
+.form-error{
+    font-size: 15px;
+    padding: 4px;
+    color: red;
+}
+.form-input{
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.form-input label{
+    padding-bottom: 8px;
+}
+.form-input input{
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.form-input input:focus{
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+.form-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.remember{
+    display: flex;
+    align-items: center;
+}
+.remember span{
+    padding-left: 8px;
+}
+
+.form-submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.form-button{
+    padding: 8px;
+    border-radius: 4px;
+    margin: 4px;
+    border: none;
+    outline: none;
+    background-color: var(--secondary);
+    /* background-color: var(--secondary); */
+    color: white;
+    width: 100px;
+    cursor: pointer;
+}
+.unactive-button{
+    /* color: var(--secondary); */
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    background-color: transparent;
+    transition: 0.5s;
+}
+.active-button:hover{
+    /* color: #43539d; */
+    /* background-color: #43530d; */
+    opacity: 0.8;
+}
+.unactive-button:hover{
+    color: white;
+    background-color: var(--secondary);
+}
+.unactive-button:active, .active-button:active{
+    transform: scale(0.9, 0.9);
+    transition: 0.3s;
+}
+
+/* .logout-button{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+} */
+.logout-button:hover{
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    background-color: #fff;
+}

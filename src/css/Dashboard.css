@@ -1,0 +1,29 @@
+.profile input{
+    margin: 8px;
+    border: 1px solid black;
+    outline: none;
+    padding: 8px;
+    width: max-content;
+    border-radius: 4px;
+}
+.profile label{
+    margin: 8px;
+}
+.user-avatar{
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 480px){
+    .dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-avatar{
+        width: 50%;
+        border-radius: 8px;
+    }
+    .profile, .profile input{
+        width: 100%;
+    }
+}

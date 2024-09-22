@@ -1,0 +1,116 @@
+.admin-title{
+    padding: 8px 4px;
+    margin: 8px 0;
+    text-transform: uppercase;
+}
+.admin{
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.admin-card{
+    background-color: var(--secondary);
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin-card-tag{
+    font-size: 20px;
+}
+.admin-card-count{
+    font-size: 32px;
+    font-weight: bold;
+}
+.admin-card:hover{
+    color: white;
+    opacity: 0.8;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.table tr:nth-child(even){background-color: #f2f2f2;}
+  
+.table tr:hover {background-color: #ddd;}
+  
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--secondary);
+    color: white;
+}
+
+.post-edit{
+    overflow-x: hidden;
+}
+.admin-post-top{
+    display: flex;
+}
+.admin-post-top-left{
+    flex: 1;
+}
+.admin-post-top-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.admin-post-top-left #post_status{
+    padding: 4px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.admin-post-top-right #post_image{
+    border-radius: 8px;
+    margin: 4px auto;
+    object-fit: fill;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+.image-button{
+    outline: none;
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+    width: 100px;
+    color: white;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 4px;
+
+}
+.post-edit #post_body{
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.post-edit #post_body:focus, .admin-post-top-left #post_status:focus{
+    border: 2px solid rgba(0, 0, 0);
+}
+.form-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 768px){
+    .admin{
+        grid-template-columns: 1fr;
+    }
+}
